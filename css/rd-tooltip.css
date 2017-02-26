@@ -1,0 +1,60 @@
+.rd-tooltip{
+	background:#333;	
+    text-align:left;
+    min-width: 80px;
+    max-width: 400px;
+	width:auto;
+	position:absolute;
+	z-index:250;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;    
+    visibility: invisible;
+    opacity:0;
+    transition:all .5s;
+    /*display:block;*/
+    /*display: none;*/
+}
+.rd-tooltip .rd-tooltip-content{
+	color:#fff;
+	font-family:az_ea_font,wf_segoe-ui_normal,"Segoe UI","Segoe WP",Tahoma,Arial,sans-serif;
+	white-space:pre-wrap;
+	text-align:left;	
+    width:auto;		
+    padding:3px 8px;
+    font-size:12px;		
+}
+.rd-tooltip .rd-tooltip-arrow{
+    width: 0;
+    height: 0;
+    background: 0 0;
+    border-style: solid;
+    border-right-color: transparent!important;
+    border-left-color: transparent!important;    
+    border-width:8px 8px 0px 0px;    
+    position: absolute;
+}
+.rd-tooltip .rd-tooltip-arrow.rd-tooltip-bottom-left{
+    left: 0;
+    bottom: -7px;
+    border-width:8px 8px 0px 0px;  
+    border-bottom-color: transparent!important;
+}
+.rd-tooltip .rd-tooltip-arrow.rd-tooltip-bottom-right{	
+    right: 0;
+    bottom: -7px;
+    border-width: 8px 0 0 8px;
+    border-bottom-color: transparent!important;
+}
+.rd-tooltip .rd-tooltip-arrow.rd-tooltip-top-left{
+    left: 0;
+    top: -7px;
+    border-width:0px 8px 8px 0px;  
+    border-top-color: transparent!important;
+}
+.rd-tooltip .rd-tooltip-arrow.rd-tooltip-top-right{	
+    right: 0;
+    top: -7px;
+    border-width: 0px 0 8px 8px;
+    border-top-color: transparent!important;
+}

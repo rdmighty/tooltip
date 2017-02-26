@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Just a test</title>		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/rd-tooltip.css"/>
+		
+		<!-- Imperative Scripts -->
+		<script type="text/javascript" src="scripts/libs/angular.js"></script>	
+		<script type="text/javascript" src="scripts/libs/ui-bootstrap-tpls-0.13.2.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+		<script type="text/javascript" src="scripts/libs/jquery.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+		
+		<script type="text/javascript" src="scripts/app.js"></script>		
+		<style>
+			
+		</style>
+	</head>   
+	<body ng-app="angular" ng-controller="indexController as vm">
+		<div class='row'>
+			<div class='col-md-6'>
+				<div class='row'>
+					<div class='col-md-6' style='background:red;'>
+						<label class='control-label cold-md-3' rd-tooltip="Type in the name sfdsfsff fsfsfsfsd fsdfs faffsfsaf afafaffa fasfassfsf sdfsfaf fsfsafafafaf fafasfassfsf adfsdf adfasdfa asdfasf aasdfasf asdfasdfasdf" tooltip-placement='bottom'>Name</label>
+						<div class='col-md-9'>
+							<input type="text" ng-model"name" rd-tooltip="vm.getTooltip()" tooltip-placement='bottom'/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='col-md-6'>
+				<div class='row'>
+					<div class='col-md-6' style='background:red;'>
+						<label class='control-label cold-md-3' tooltip="Type in the \nname sfdsfsff fsfsfsfsd fsdfs faffsfsaf afafaffa fasfassfsf sdfsfaf fsfsafafafaf fafasfassfsf adfsdf adfasdfa asdfasf aasdfasf asdfasdfasdf" tooltip-placement='bottom'>Name</label>
+						<div class='col-md-9'>
+							<input type="text" ng-model"name" tooltip="Because if you won't I will'" tooltip-placement='bottom'/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Post Ready Scripts -->
+		<script type="text/javascript" src="scripts/directives/rd-tooltip.directive.js"></script>	
+		<script type="text/javascript" src="scripts/controllers/indexController.js"></script>	
+	</body>
+</html>
