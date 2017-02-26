@@ -74,42 +74,42 @@
                     }
 
                     if(!toBottom && toLeftOffset){
-                        tooltip.css('top', (aElemOffTop - 9 - tooltipHeight));
-                        tooltip.css('left', (aElemOffLeft + 1));
+                        tooltip.css('top', (aElemOffTop - 9 - tooltipHeight)+'px');
+                        tooltip.css('left', (aElemOffLeft + 1)+'px');
                         tooltipArrow.addClass('rd-tooltip-bottom-left');
                     }
                     else if(!toBottom && !toLeftOffset && toRightOffset){
-                        tooltip.css('top', (aElemOffTop - 9 - tooltipHeight));
-                        tooltip.css('left', (aElemOffLeft - tooltipWidth + 1));
+                        tooltip.css('top', (aElemOffTop - 9 - tooltipHeight)+'px');
+                        tooltip.css('left', (aElemOffLeft - tooltipWidth + 1)+'px');
                         tooltipArrow.addClass('rd-tooltip-bottom-right');
                     }
                     else if(toBottom && toLeftOffset){
-                        tooltip.css('top', (aElemOffTop + aElemHeight + 9));
-                        tooltip.css('left', (aElemOffLeft + 1));
+                        tooltip.css('top', (aElemOffTop + aElemHeight + 9)+'px');
+                        tooltip.css('left', (aElemOffLeft + 1)+'px');
                         tooltipArrow.addClass('rd-tooltip-top-left');
                     }
                     else if(toBottom && !toLeftOffset && toRightOffset){
-                        tooltip.css('top', (aElemOffTop + aElemHeight + 9));
-                        tooltip.css('left', (aElemOffLeft - tooltipWidth + 1));
+                        tooltip.css('top', (aElemOffTop + aElemHeight + 9)+'px');
+                        tooltip.css('left', (aElemOffLeft - tooltipWidth + 1)+'px');
                         tooltipArrow.addClass('rd-tooltip-top-right');
                     }
                     else if(toBottom && !toLeftOffset && !toRightOffset){     
-                        tooltip.css('left', (aElemOffLeft + 1));                   
+                        tooltip.css('left', (aElemOffLeft + 1)+'px');                   
                         tooltip.css('min-width',aElemWidth+'px !important');
                         tooltip.css('width', aElemWidth+'px !important');  
                         tooltipArrow.addClass('rd-tooltip-top-left');  
                         //recalculate the height of tooltip
                         tooltipHeight = tooltip[0].clientHeight; 
-                        tooltip.css('top', (aElemOffTop + aElemHeight + 9));                                                                    
+                        tooltip.css('top', (aElemOffTop + aElemHeight + 9)+'px');                                                                    
                     }
                     else if(!toBottom && !toLeftOffset && !toRightOffset){ 
-                        tooltip.css('left', (aElemOffLeft + 1));                        
+                        tooltip.css('left', (aElemOffLeft + 1)+'px');                        
                         tooltip.css('min-width',aElemWidth+'px !important');
                         tooltip.css('width', aElemWidth+'px !important');
                         tooltipArrow.addClass('rd-tooltip-bottom-left');   
                         //recalculate the height of tooltip
                         tooltipHeight = tooltip[0].clientHeight;
-                        tooltip.css('top', (aElemOffTop - 9 - tooltipHeight));                                                                    
+                        tooltip.css('top', (aElemOffTop - 9 - tooltipHeight)+'px');                                                                    
                     }
                     tooltip.css({'visibility':'visible', 'opacity': '1'});
                 }
